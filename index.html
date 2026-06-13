@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>유튜브 쇼츠 대본 시간 계산기 - 1분 내레이션 분량 확인</title>
+    <meta name="description" content="유튜브 쇼츠, 인스타그램 릴스, 틱톡 등 숏폼 영상 제작을 위한 무료 대본 읽기 시간 계산기입니다. 직접 말하는 속도에 맞춰 1분(60초) 분량의 글자 수를 정확히 확인하세요.">
+    <meta name="keywords" content="쇼츠대본, 글자수계산기, 읽기시간계산기, 유튜브내레이션, 숏폼대본, 1분글자수">
+    <link rel="canonical" href="https://www.yourdomain.com/">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <h1><a href="/">Creator Tools</a></h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="/" class="active">대본 시간 계산기</a></li>
+                    <!-- 추후 확장 시 아래 주석 해제 및 추가 -->
+                    <!-- <li><a href="/tags.html">해시태그 생성기</a></li> -->
+                    <!-- <li><a href="/thumbnail.html">썸네일 추출기</a></li> -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="content-wrapper">
+        <section class="tool-section">
+            <h2>대본 읽기 시간 계산기</h2>
+            <div class="calculator-container">
+                <div class="controls">
+                    <label for="speedSelect">말하기 속도:</label>
+                    <select id="speedSelect">
+                        <option value="4">조금 느리게 (초당 4자)</option>
+                        <option value="5" selected>보통 속도 (초당 5자)</option>
+                        <option value="6">조금 빠르게 (초당 6자)</option>
+                    </select>
+                </div>
+                
+                <textarea id="scriptInput" placeholder="여기에 영상 내레이션 대본을 입력하세요..."></textarea>
+                
+                <div class="result-board">
+                    <div class="result-box">
+                        <span class="label">예상 소요 시간</span>
+                        <strong id="estimatedTime">0초</strong>
+                    </div>
+                    <div class="result-box">
+                        <span class="label">공백 제외 글자수</span>
+                        <strong id="charCount">0자</strong>
+                    </div>
+                </div>
+                <button id="clearBtn" class="btn-primary">대본 초기화</button>
+            </div>
+        </section>
+
+        <!-- 애드센스 심사 및 SEO를 위한 텍스트 콘텐츠 -->
+        <article class="seo-content">
+            <section id="about-service">
+                <h3>사이트 소개: 숏폼 크리에이터를 위한 필수 도구</h3>
+                <p>최근 유튜브 쇼츠(Shorts), 인스타그램 릴스(Reels), 틱톡(TikTok) 등 1분 미만의 숏폼 콘텐츠가 미디어의 핵심으로 자리 잡았습니다. 짧은 시간 안에 시청자의 이목을 사로잡기 위해서는 시각적인 요소만큼이나 청각적인 요소, 즉 내레이션의 퀄리티가 중요합니다. 본 사이트의 '대본 시간 계산기'는 기계음(TTS)이 아닌 직접 목소리를 녹음하여 영상을 제작하는 크리에이터들이 녹음 전 대본의 분량이 60초 제한에 맞는지 미리 확인할 수 있도록 돕기 위해 개발되었습니다. 별도의 프로그램 설치나 가입 없이 웹에서 즉각적으로 계산 결과를 확인할 수 있어 영상 편집 및 기획 시간을 획기적으로 단축해 줍니다.</p>
+            </section>
+
+            <section id="features-detail">
+                <h3>주요 기능 소개 및 활용 방법</h3>
+                <p>이 웹 기반 유틸리티는 사용자가 텍스트를 입력하는 즉시 실시간으로 데이터를 연산합니다. 첫째, <strong>맞춤형 말하기 속도 조절</strong> 기능입니다. 사람마다 말하는 속도가 다르며, 콘텐츠의 분위기(정보 전달, 일상 브이로그, 유머 등)에 따라 내레이션의 템포가 달라집니다. '초당 4자~6자' 기준의 옵션을 제공하여 본인에게 맞는 정확한 예상 시간을 산출합니다. 둘째, <strong>실시간 글자 수 카운팅</strong>입니다. 공백을 제외한 순수 글자 수를 함께 표시하여 원고의 전체적인 양을 시각적으로 파악할 수 있습니다. 작성된 대본이 50초를 넘어간다면, 불필요한 수식어를 제거하여 이탈률을 낮추는 방향으로 대본을 수정해 보시길 권장합니다.</p>
+            </section>
+
+            <section id="privacy-policy">
+                <h3>개인정보처리방침</h3>
+                <p>본 웹사이트는 사용자의 개인정보 보호를 최우선 가치로 삼고 있습니다. 대본 시간 계산기를 포함한 사이트 내 모든 기능은 사용자의 브라우저 환경(Client-side)에서만 독립적으로 실행됩니다. 사용자가 입력창에 작성한 아이디어, 대본 내용, 개인 정보 등 어떠한 텍스트 데이터도 당사의 서버로 전송되거나 저장되지 않으므로, 콘텐츠 유출에 대한 걱정 없이 안전하게 이용하실 수 있습니다. 단, 사이트의 원활한 운영을 위해 Google AdSense와 같은 타사 광고 시스템이 방문자의 쿠키를 활용하여 맞춤형 광고를 게재할 수 있으며, 이는 브라우저 설정을 통해 언제든 거부할 수 있습니다.</p>
+            </section>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Creator Tools. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="#privacy-policy">개인정보처리방침</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
